@@ -15,6 +15,7 @@
 		09A7214221BF7C2D007203E5 /* DarkSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7214121BF7C2D007203E5 /* DarkSkyTests.swift */; };
 		09A7214D21BF7C2D007203E5 /* DarkSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7214C21BF7C2D007203E5 /* DarkSkyUITests.swift */; };
 		09A7215E21BF85FA007203E5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7215D21BF85FA007203E5 /* Result.swift */; };
+		09A7216021BF8A5C007203E5 /* DarkSkyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7215F21BF8A5C007203E5 /* DarkSkyForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		09A7214C21BF7C2D007203E5 /* DarkSkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyUITests.swift; sourceTree = "<group>"; };
 		09A7214E21BF7C2D007203E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A7215D21BF85FA007203E5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		09A7215F21BF8A5C007203E5 /* DarkSkyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				09A7212E21BF7C2B007203E5 /* WeatherViewController.swift */,
+				09A7215F21BF8A5C007203E5 /* DarkSkyForecast.swift */,
 				09A7215D21BF85FA007203E5 /* Result.swift */,
 				09A7213021BF7C2B007203E5 /* Main.storyboard */,
 				09A7215A21BF7C38007203E5 /* Resources */,
@@ -269,6 +272,7 @@
 			files = (
 				09A7212F21BF7C2B007203E5 /* WeatherViewController.swift in Sources */,
 				09A7215E21BF85FA007203E5 /* Result.swift in Sources */,
+				09A7216021BF8A5C007203E5 /* DarkSkyForecast.swift in Sources */,
 				09A7212D21BF7C2B007203E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
