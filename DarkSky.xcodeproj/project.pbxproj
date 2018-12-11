@@ -12,7 +12,7 @@
 		09A7213221BF7C2B007203E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A7213021BF7C2B007203E5 /* Main.storyboard */; };
 		09A7213421BF7C2D007203E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09A7213321BF7C2D007203E5 /* Assets.xcassets */; };
 		09A7213721BF7C2D007203E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A7213521BF7C2D007203E5 /* LaunchScreen.storyboard */; };
-		09A7214221BF7C2D007203E5 /* DarkSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7214121BF7C2D007203E5 /* DarkSkyTests.swift */; };
+		09A7214221BF7C2D007203E5 /* DarkSkyForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7214121BF7C2D007203E5 /* DarkSkyForecastTests.swift */; };
 		09A7214D21BF7C2D007203E5 /* DarkSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7214C21BF7C2D007203E5 /* DarkSkyUITests.swift */; };
 		09A7215C21BF7FAD007203E5 /* DarkSkyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7215B21BF7FAD007203E5 /* DarkSkyService.swift */; };
 		09A7215E21BF85FA007203E5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7215D21BF85FA007203E5 /* Result.swift */; };
@@ -46,7 +46,7 @@
 		09A7213621BF7C2D007203E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09A7213821BF7C2D007203E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A7213D21BF7C2D007203E5 /* DarkSkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkSkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09A7214121BF7C2D007203E5 /* DarkSkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyTests.swift; sourceTree = "<group>"; };
+		09A7214121BF7C2D007203E5 /* DarkSkyForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyForecastTests.swift; sourceTree = "<group>"; };
 		09A7214321BF7C2D007203E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A7214821BF7C2D007203E5 /* DarkSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DarkSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A7214C21BF7C2D007203E5 /* DarkSkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyUITests.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		09A7214021BF7C2D007203E5 /* DarkSkyTests */ = {
 			isa = PBXGroup;
 			children = (
-				09A7214121BF7C2D007203E5 /* DarkSkyTests.swift */,
+				09A7214121BF7C2D007203E5 /* DarkSkyForecastTests.swift */,
 				09A7214321BF7C2D007203E5 /* Info.plist */,
 			);
 			path = DarkSkyTests;
@@ -313,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A7214221BF7C2D007203E5 /* DarkSkyTests.swift in Sources */,
+				09A7214221BF7C2D007203E5 /* DarkSkyForecastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

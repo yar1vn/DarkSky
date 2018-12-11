@@ -8,7 +8,7 @@
 
 import Foundation
 
-// This custom type is based on SE-0235:
+// I created this custom type based on SE-0235:
 // https://forums.swift.org/t/accepted-with-modifications-se-0235-add-result-to-the-standard-library/18603
 enum Result<Success, Failure> where Failure: Error {
     case success(Success)
