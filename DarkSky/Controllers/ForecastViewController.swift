@@ -8,6 +8,6 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+final class ForecastViewController: UITableViewController {
 
 }
