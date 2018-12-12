@@ -10,4 +10,9 @@ import UIKit
 
 final class ForecastViewController: UITableViewController {
 
+    @IBAction func findCurrentLocation(_ sender: UIBarButtonItem) {
+
+    }
+
+    
 }

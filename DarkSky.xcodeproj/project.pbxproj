@@ -10,6 +10,7 @@
 		0957402021C0C52D007E86E4 /* DarkSkyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957401F21C0C52D007E86E4 /* DarkSkyServiceTests.swift */; };
 		0957402221C0C9D5007E86E4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402121C0C9D5007E86E4 /* LocationService.swift */; };
 		0957402421C0CDB5007E86E4 /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */; };
+		0957402621C0E338007E86E4 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402521C0E338007E86E4 /* ForecastViewModel.swift */; };
 		09A7212D21BF7C2B007203E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7212C21BF7C2B007203E5 /* AppDelegate.swift */; };
 		09A7212F21BF7C2B007203E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */; };
 		09A7213221BF7C2B007203E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A7213021BF7C2B007203E5 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		0957401F21C0C52D007E86E4 /* DarkSkyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyServiceTests.swift; sourceTree = "<group>"; };
 		0957402121C0C9D5007E86E4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
+		0957402521C0E338007E86E4 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		09A7212921BF7C2B007203E5 /* DarkSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A7212C21BF7C2B007203E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0957402721C0E4E1007E86E4 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */,
+				0957402521C0E338007E86E4 /* ForecastViewModel.swift */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		0957402821C0E4EA007E86E4 /* Daily Details */ = {
+			isa = PBXGroup;
+			children = (
+				09A7216521BFA12E007203E5 /* DailyViewController.swift */,
+			);
+			path = "Daily Details";
+			sourceTree = "<group>";
+		};
 		09A7212021BF7C2B007203E5 = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				09A7213021BF7C2B007203E5 /* Main.storyboard */,
-				09A7216421BFA10C007203E5 /* Controllers */,
+				09A7216421BFA10C007203E5 /* App */,
 				09A7216221BFA0C6007203E5 /* Services */,
 				09A7216321BFA0F1007203E5 /* Model */,
 				09A7215A21BF7C38007203E5 /* Resources */,
@@ -169,13 +188,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		09A7216421BFA10C007203E5 /* Controllers */ = {
+		09A7216421BFA10C007203E5 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */,
-				09A7216521BFA12E007203E5 /* DailyViewController.swift */,
+				0957402721C0E4E1007E86E4 /* Forecast */,
+				0957402821C0E4EA007E86E4 /* Daily Details */,
 			);
-			path = Controllers;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +333,7 @@
 				09A7212F21BF7C2B007203E5 /* ForecastViewController.swift in Sources */,
 				09A7216621BFA12E007203E5 /* DailyViewController.swift in Sources */,
 				09A7215E21BF85FA007203E5 /* Result.swift in Sources */,
+				0957402621C0E338007E86E4 /* ForecastViewModel.swift in Sources */,
 				09A7216021BF8A5C007203E5 /* DarkSkyForecast.swift in Sources */,
 				09A7212D21BF7C2B007203E5 /* AppDelegate.swift in Sources */,
 			);
