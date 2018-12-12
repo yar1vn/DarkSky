@@ -75,9 +75,36 @@
                     <view key="view" contentMode="scaleToFill" id="exa-Cj-bRq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Summary" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyg-Oh-Jnz">
+                                <rect key="frame" x="103" y="184.5" width="169" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="QmB-2B-UFH">
+                                <rect key="frame" x="93.5" y="239.5" width="188.5" height="188.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QmB-2B-UFH" secondAttribute="height" multiplier="1:1" id="u39-G0-x4W"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hyg-Oh-Jnz" firstAttribute="centerX" secondItem="exa-Cj-bRq" secondAttribute="centerX" id="1h6-Pi-W19"/>
+                            <constraint firstItem="QmB-2B-UFH" firstAttribute="centerY" secondItem="exa-Cj-bRq" secondAttribute="centerY" id="EqT-xM-QzB"/>
+                            <constraint firstItem="Hyg-Oh-Jnz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="exa-Cj-bRq" secondAttribute="leadingMargin" id="STu-3c-9Nz"/>
+                            <constraint firstItem="Hyg-Oh-Jnz" firstAttribute="centerY" secondItem="exa-Cj-bRq" secondAttribute="centerY" multiplier="0.6" id="kKD-I4-0cx"/>
+                            <constraint firstItem="QmB-2B-UFH" firstAttribute="width" secondItem="exa-Cj-bRq" secondAttribute="width" multiplier="0.5" constant="1" id="pvf-BU-82j"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Hyg-Oh-Jnz" secondAttribute="trailing" id="sfN-ZW-rBo"/>
+                            <constraint firstItem="QmB-2B-UFH" firstAttribute="centerX" secondItem="exa-Cj-bRq" secondAttribute="centerX" id="yNe-Eq-73d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hld-Dy-8TG"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="QmB-2B-UFH" id="JA9-nq-Bbr"/>
+                        <outlet property="summaryLabel" destination="Hyg-Oh-Jnz" id="f1H-re-xLQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnV-gZ-WJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

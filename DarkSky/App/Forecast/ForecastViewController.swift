@@ -39,10 +39,11 @@ final class ForecastViewController: UITableViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if var dailyContainer = segue.destination as? DarkSkyDailyContainer,
+        if var dailyContainer = segue.destination as? DarkSkyDailyContainer & UIViewController,
             let indexPath = tableView.indexPath(for: sender),
             let dailyForecast = viewModel[indexPath] {
             dailyContainer.daily = dailyForecast
+            dailyContainer.title = viewModel.day(for: dailyForecast.time)
         }
     }
 }

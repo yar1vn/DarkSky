@@ -12,7 +12,7 @@ import Foundation
 // https://itunes.apple.com/us/app/paste-json-as-code-quicktype/id1330801220?mt=12
 
 protocol DarkSkyDailyContainer {
-    var daily: DarkSkyDaily { get set }
+    var daily: DarkSkyDaily! { get set }
 }
 
 struct DarkSkyForecast: Codable, Hashable {

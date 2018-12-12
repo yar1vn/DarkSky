@@ -30,7 +30,14 @@ final class ForecastViewModel: NSObject {
         }
     }
 
-    // Use State to store relevant data
+    // Keep an instance for performance and easy access.
+    private let dayFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE"
+        return formatter
+    }()
+
+    // Use State to store relevant data.
     enum State {
         case forecast(DarkSkyForecast)
         case location(CLLocationCoordinate2D)
@@ -56,11 +63,9 @@ final class ForecastViewModel: NSObject {
         }
     }
 
-    private let dayFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
-        return formatter
-    }()
+    func day(for date: Date) -> String {
+        return dayFormatter.string(from: date)
+    }
 
     func loadWeatherForecast(for location: CLLocationCoordinate2D) {
         darkSky.getForecast(location: location) { result in
@@ -99,8 +104,8 @@ extension ForecastViewModel: UITableViewDataSource {
     }
 
     func configureCell(_ cell: UITableViewCell, with daily: DarkSkyDaily) {
-        cell.textLabel?.text = dayFormatter.string(from: daily.time) + " " + daily.temperatureSummary
-        cell.detailTextLabel?.text = daily.summary
+        cell.textLabel?.text = day(for: daily.time)
+        cell.detailTextLabel?.text = daily.temperatureSummary
         cell.imageView?.image = daily.iconImage
     }
 }
