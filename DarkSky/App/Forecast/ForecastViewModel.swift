@@ -81,7 +81,7 @@ extension ForecastViewModel: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         guard let forecast = state.getForecast() else {
             return cell
         }
@@ -90,7 +90,32 @@ extension ForecastViewModel: UITableViewDataSource {
     }
 
     func configureCell(_ cell: UITableViewCell, with daily: DarkSkyDaily) {
-        cell.textLabel?.text = dayFormatter.string(from: daily.time)
-        cell.imageView?.image = UIImage(imageLiteralResourceName: daily.icon)
+        cell.textLabel?.text = dayFormatter.string(from: daily.time) + " " + daily.temperatureSummary
+        cell.detailTextLabel?.text = daily.summary
+        cell.imageView?.image = daily.iconImage
+    }
+}
+
+extension DarkSkyDaily {
+    var iconImage: UIImage? {
+        return icon.map { UIImage(imageLiteralResourceName: $0) }
+    }
+
+    var highTemperatureString: String {
+        guard let temperatureHigh = temperatureHigh else {
+            return ""
+        }
+        return "H:\(Int(temperatureHigh))º"
+    }
+
+    var lowTemperatureString: String {
+        guard let temperatureLow = temperatureLow else {
+            return ""
+        }
+        return "L:\(Int(temperatureLow))º"
+    }
+
+    var temperatureSummary: String {
+        return highTemperatureString + " " + lowTemperatureString
     }
 }
