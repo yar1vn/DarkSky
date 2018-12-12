@@ -14,7 +14,12 @@ enum LocationServiceError: Error {
     case locationManagerError(Error)
 }
 
-class LocationService: NSObject {
+protocol LocationServiceProtocol {
+    typealias CompletionType = (Result<CLLocation, LocationServiceError>) -> Void
+    func requestLocation(completion: @escaping CompletionType)
+}
+
+final class LocationService: NSObject, LocationServiceProtocol {
     private let manager = CLLocationManager()
 
     override init() {
@@ -22,8 +27,6 @@ class LocationService: NSObject {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.delegate = self
     }
-
-    typealias CompletionType = (Result<CLLocation, LocationServiceError>) -> Void
 
     private var completion: CompletionType?
 

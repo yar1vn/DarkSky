@@ -11,7 +11,7 @@ import CoreLocation
 @testable import DarkSky
 
 // Another approach would be to create a protocol
-final class MockLocationService: LocationService {
+final class MockLocationService: LocationServiceProtocol {
     private let coordinate: CLLocationCoordinate2D?
 
     // Provide a coordinate to return a successful response when calling requestLocation.
@@ -20,7 +20,7 @@ final class MockLocationService: LocationService {
         self.coordinate = coordinate
     }
 
-    override func requestLocation(completion: @escaping LocationService.CompletionType) {
+    func requestLocation(completion: @escaping LocationService.CompletionType) {
         guard let coordinate = coordinate else {
             completion(.failure(.locationAccessDenied))
             return
@@ -31,7 +31,7 @@ final class MockLocationService: LocationService {
 }
 
 class LocationServiceTests: XCTestCase {
-    var locationService: LocationService!
+    var locationService: LocationServiceProtocol!
 
     override func setUp() {
         locationService = nil
