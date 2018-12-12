@@ -35,7 +35,7 @@ final class DarkSkyService {
         self.apiKey = apiKey
     }
 
-    private func generateURL(location: CLLocationCoordinate2D, time: Date? = nil) -> URL? {
+    func generateURL(location: CLLocationCoordinate2D, time: Date? = nil) -> URL? {
         var components = URLComponents()
         components.host = baseURL
         components.scheme = "https"
@@ -43,12 +43,12 @@ final class DarkSkyService {
         components.queryItems = [URLQueryItem(name: "exclude", value: "[currently, minutely, hourly, alerts, flags]")]
 
         // send key and location in path
-        components.path += "/\(apiKey)"
-        components.path += "/\(location.latitude),\(location.longitude)"
+        components.path += "/forecast/\(apiKey)"
+        components.path += "/\(Int(location.latitude)),\(Int(location.longitude))"
 
         // for time machine requests
         if let time = time {
-            components.path += "/\(time.timeIntervalSince1970)"
+            components.path += "/\(Int(time.timeIntervalSince1970))"
         }
 
         return components.url
