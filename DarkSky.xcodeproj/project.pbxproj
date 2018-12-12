@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0957402021C0C52D007E86E4 /* DarkSkyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957401F21C0C52D007E86E4 /* DarkSkyServiceTests.swift */; };
 		0957402221C0C9D5007E86E4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402121C0C9D5007E86E4 /* LocationService.swift */; };
+		0957402421C0CDB5007E86E4 /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */; };
 		09A7212D21BF7C2B007203E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7212C21BF7C2B007203E5 /* AppDelegate.swift */; };
 		09A7212F21BF7C2B007203E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */; };
 		09A7213221BF7C2B007203E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A7213021BF7C2B007203E5 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		0957401F21C0C52D007E86E4 /* DarkSkyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyServiceTests.swift; sourceTree = "<group>"; };
 		0957402121C0C9D5007E86E4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
 		09A7212921BF7C2B007203E5 /* DarkSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A7212C21BF7C2B007203E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				0957401F21C0C52D007E86E4 /* DarkSkyServiceTests.swift */,
 				09A7214121BF7C2D007203E5 /* DarkSkyForecastTests.swift */,
+				0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */,
 				09A7214321BF7C2D007203E5 /* Info.plist */,
 			);
 			path = DarkSkyTests;
@@ -322,6 +325,7 @@
 			files = (
 				09A7214221BF7C2D007203E5 /* DarkSkyForecastTests.swift in Sources */,
 				0957402021C0C52D007E86E4 /* DarkSkyServiceTests.swift in Sources */,
+				0957402421C0CDB5007E86E4 /* LocationServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
