@@ -38,5 +38,11 @@ final class ForecastViewController: UITableViewController {
         viewModel.findCurrentLocation()
     }
 
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if var dailyContainer = segue.destination as? DarkSkyDailyContainer,
+            let indexPath = tableView.indexPath(for: sender),
+            let dailyForecast = viewModel[indexPath] {
+            dailyContainer.daily = dailyForecast
+        }
+    }
 }

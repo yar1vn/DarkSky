@@ -76,16 +76,23 @@ final class ForecastViewModel: NSObject {
 }
 
 extension ForecastViewModel: UITableViewDataSource {
+    subscript(_ indexPath: IndexPath) -> DarkSkyDaily? {
+        guard let forecast = state.getForecast() else {
+            return nil
+        }
+        return forecast.daily.data[indexPath.row]
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return state.getForecast()?.daily.data.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        guard let forecast = state.getForecast() else {
+        guard let dailyForecast = self[indexPath] else {
             return cell
         }
-        configureCell(cell, with: forecast.daily.data[indexPath.row])
+        configureCell(cell, with: dailyForecast)
         return cell
     }
 

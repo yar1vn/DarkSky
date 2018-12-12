@@ -11,6 +11,7 @@
 		0957402221C0C9D5007E86E4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402121C0C9D5007E86E4 /* LocationService.swift */; };
 		0957402421C0CDB5007E86E4 /* LocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */; };
 		0957402621C0E338007E86E4 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402521C0E338007E86E4 /* ForecastViewModel.swift */; };
+		0957402C21C1008C007E86E4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957402B21C1008C007E86E4 /* UITableView+.swift */; };
 		09A7212D21BF7C2B007203E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7212C21BF7C2B007203E5 /* AppDelegate.swift */; };
 		09A7212F21BF7C2B007203E5 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */; };
 		09A7213221BF7C2B007203E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A7213021BF7C2B007203E5 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		0957402121C0C9D5007E86E4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		0957402321C0CDB5007E86E4 /* LocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceTests.swift; sourceTree = "<group>"; };
 		0957402521C0E338007E86E4 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		0957402B21C1008C007E86E4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		09A7212921BF7C2B007203E5 /* DarkSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A7212C21BF7C2B007203E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A7212E21BF7C2B007203E5 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				09A7212C21BF7C2B007203E5 /* AppDelegate.swift */,
+				0957402B21C1008C007E86E4 /* UITableView+.swift */,
 				09A7213321BF7C2D007203E5 /* Assets.xcassets */,
 				09A7213521BF7C2D007203E5 /* LaunchScreen.storyboard */,
 				09A7213821BF7C2D007203E5 /* Info.plist */,
@@ -331,6 +334,7 @@
 				0957402221C0C9D5007E86E4 /* LocationService.swift in Sources */,
 				09A7215C21BF7FAD007203E5 /* DarkSkyService.swift in Sources */,
 				09A7212F21BF7C2B007203E5 /* ForecastViewController.swift in Sources */,
+				0957402C21C1008C007E86E4 /* UITableView+.swift in Sources */,
 				09A7216621BFA12E007203E5 /* DailyViewController.swift in Sources */,
 				09A7215E21BF85FA007203E5 /* Result.swift in Sources */,
 				0957402621C0E338007E86E4 /* ForecastViewModel.swift in Sources */,

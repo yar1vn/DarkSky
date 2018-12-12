@@ -11,6 +11,10 @@ import Foundation
 // Used quicktype app to generate this JSON with some modifications (mostly manually set Date types).
 // https://itunes.apple.com/us/app/paste-json-as-code-quicktype/id1330801220?mt=12
 
+protocol DarkSkyDailyContainer {
+    var daily: DarkSkyDaily { get set }
+}
+
 struct DarkSkyForecast: Codable, Hashable {
     let latitude, longitude: Double
     let timezone: String
