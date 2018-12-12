@@ -132,7 +132,6 @@
 		09A7212B21BF7C2B007203E5 /* DarkSky */ = {
 			isa = PBXGroup;
 			children = (
-				09A7213021BF7C2B007203E5 /* Main.storyboard */,
 				09A7216421BFA10C007203E5 /* App */,
 				09A7216221BFA0C6007203E5 /* Services */,
 				09A7216321BFA0F1007203E5 /* Model */,
@@ -194,6 +193,7 @@
 		09A7216421BFA10C007203E5 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				09A7213021BF7C2B007203E5 /* Main.storyboard */,
 				0957402721C0E4E1007E86E4 /* Forecast */,
 				0957402821C0E4EA007E86E4 /* Daily Details */,
 			);
@@ -560,6 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yariv.DarkSkyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkSky.app/DarkSky";
@@ -580,6 +581,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yariv.DarkSkyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DarkSky.app/DarkSky";

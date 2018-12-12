@@ -20,7 +20,8 @@ final class ForecastViewModel: NSObject {
         self.cellIdentifier = cellIdentifier
     }
 
-    // The view controller should subscribe to this
+    // The view controller should subscribe to this.
+    // this could be upgraded with Rx in the future.
     var stateChanged: ((State) -> Void)?
 
     private var state: State = .empty {
@@ -75,6 +76,7 @@ final class ForecastViewModel: NSObject {
     }
 }
 
+// Make the view model responsible for formatting and updating data in the table view.
 extension ForecastViewModel: UITableViewDataSource {
     subscript(_ indexPath: IndexPath) -> DarkSkyDaily? {
         guard let forecast = state.getForecast() else {
@@ -103,6 +105,7 @@ extension ForecastViewModel: UITableViewDataSource {
     }
 }
 
+// It's the view model's job to make the data pretty for the view.
 extension DarkSkyDaily {
     var iconImage: UIImage? {
         return icon.map { UIImage(imageLiteralResourceName: $0) }

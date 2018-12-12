@@ -51,7 +51,7 @@ class LocationServiceTests: XCTestCase {
                 expectation.fulfill()
             } catch {}
         }
-        wait(for: [expectation], timeout: 15)
+        wait(for: [expectation], timeout: 5)
     }
 
     func testRequestLocationNoAuthorization() {

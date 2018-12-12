@@ -23,7 +23,7 @@ final class ForecastViewController: UITableViewController {
         DispatchQueue.main.async {
             switch state {
             case .loading:
-                break
+                break // a good place to put a loading indicator
             case .location(let location):
                 self.viewModel.loadWeatherForecast(for: location)
             case .forecast, .empty:
