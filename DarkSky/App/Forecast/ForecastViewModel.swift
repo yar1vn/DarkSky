@@ -68,6 +68,8 @@ final class ForecastViewModel: NSObject {
     }
 
     func loadWeatherForecast(for location: CLLocationCoordinate2D) {
+        state = .loading
+        
         darkSky.getForecast(location: location) { result in
             do {
                 let forecast = try result.get()
